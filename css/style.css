@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+:root{
+    --primary-blue: #4D96A9;
+    --primary-purple: #855FB1;
+    --secondary-blue: #8FE3F9;
+    --secondary-purple: #D9B8FF;
+    --text-black: #28283D;
+    --text-grey: #87879D;
+}
+
+body {
+    background-color: #fbfafa;
+}
+
+.banner {
+    background-image: url(/img/image-hero-left.png), url(/img/image-hero-right.png);
+    background-size: 25%,25%;
+    background-position-x: -3% , 103%;
+    background-position-y: 50%, 50%;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+
+.logo {
+    margin-top: 75px;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 65px;
+    line-height: 1.1;
+}
+
+.banner__titles {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.banner__titles p {
+    font-size: 18px;
+    color: var(--text-grey);
+    font-weight: 500;
+    margin-top: 35px;
+}
+
+.banner__btn .btn {
+    margin: 22px 7px;
+}
+
+.btn-download {
+    padding: 12px 35px;
+    background-color: var(--primary-blue);
+    border-radius: 25px;
+    color: white;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.btn-concept {
+    padding: 12px 25px;
+    background-color: var(--primary-purple);
+    border-radius: 25px;
+    color: white;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.meetings {
+
+}
+
+.number {
+   
+}
+
+.number hr {
+    transform: rotate(90deg);
+    height: 0;
+    width: 75px;
+    background-color: #87879d4d;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.number-one {
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    border: 1px solid #87879d4d;
+    margin: 37px auto 0;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-grey);
+    font-size: 19px;
+}
+
+.number-two {
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    border: 1px solid #87879d4d;
+    margin: 37px auto 0;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-grey);
+    font-size: 19px;
+}
+
+.meetings_img {
+    margin-top: 50px;
+}
+
+.meetings_img img {
+    max-width: 240px;
+    border-radius: 15px;
+    margin: 0 15px;
+}
+
+.meetings__content {
+    text-align: center;
+    margin: 60px 0;
+}
+
+.meetings__content-title {
+    color: var(--primary-blue);
+    font-size: 16px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.meetings__content-text {
+    color: var(--text-grey);
+    line-height: 1.1;
+    /* font-weight: 500; */
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.meetings__content h2 {
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 1;
+    margin: 20px 0;
+}
