@@ -64,6 +64,15 @@ h1 {
     font-size: 17px;
 }
 
+.btn-download-footer {
+    padding: 12px 35px;
+    background-color: var(--primary-purple);
+    border-radius: 25px;
+    color: white;
+    font-weight: 500;
+    font-size: 17px;
+}
+
 .btn-concept {
     padding: 12px 25px;
     background-color: var(--primary-purple);
@@ -73,21 +82,13 @@ h1 {
     font-size: 17px;
 }
 
-.meetings {
-
-}
-
-.number {
-   
-}
-
 .number hr {
     transform: rotate(90deg);
     height: 0;
     width: 75px;
-    background-color: #87879d4d;
+    background-color: #87879d30;
     margin: auto;
-    margin-top: 80px;
+    margin-top: 55px;
 }
 
 .number-one {
@@ -144,22 +145,35 @@ h1 {
     color: var(--text-grey);
     line-height: 1.1;
     /* font-weight: 500; */
-    font-size: 16px;
+    font-size: 17px;
     margin: 20px 0;
 }
 
 .meetings__content h2 {
-    font-size: 35px;
+    font-size: 40px;
     font-weight: bold;
     line-height: 1;
     margin: 20px 0;
 }
 
 .experience {
-    background-image: url('/img/image-footer-desktop.jpg');
-    background-color: rgba(77, 150, 169, 0.85);
     background-size: cover;
     /* background-position: center center; */
     background-repeat: no-repeat;
     height: 300px;
+    background: linear-gradient(to right, rgba(77,150,169,0.55), rgba(85,160,169,0.85)), url(/img/image-footer-desktop.jpg);
+    background: linear-gradient(to right, rgb(77 150 169 / 75%), rgba(85,160,169,0.85)), url(/img/image-footer-desktop.jpg);
+    display: flex;
+    align-items: center;
+}
+
+.experience h3 {
+    color: white;
+    font-weight: 700;
+    font-size: 37px;
+}
+
+.experience p {
+    color: white;
+    font-weight: 500;
 }
