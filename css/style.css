@@ -82,7 +82,16 @@ h1 {
     font-size: 17px;
 }
 
-.number hr {
+.number-top hr {
+    transform: rotate(90deg);
+    height: 0;
+    width: 75px;
+    background-color: #87879d30;
+    margin: auto;
+    margin-top: 55px;
+}
+
+.number-bottom hr {
     transform: rotate(90deg);
     height: 0;
     width: 75px;
@@ -96,13 +105,13 @@ h1 {
     height: 45px;
     border-radius: 100%;
     border: 1px solid #87879d4d;
-    margin: 37px auto 0;
+    margin: 37px auto 40px;
     font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--text-grey);
-    font-size: 19px;
+    font-size: 17px;
 }
 
 .number-two {
@@ -120,33 +129,34 @@ h1 {
 }
 
 .meetings_img {
-    margin-top: 50px;
+    /* margin-top: 50px; */
+    text-align: center;
 }
 
 .meetings_img img {
     max-width: 240px;
     border-radius: 15px;
-    margin: 0 15px;
+    margin: 15px;
 }
 
 .meetings__content {
     text-align: center;
-    margin: 60px 0;
+    margin: 65px 0;
 }
 
 .meetings__content-title {
     color: var(--primary-blue);
     font-size: 16px;
     font-weight: 600;
+    letter-spacing: 4px;
     margin: 20px 0;
 }
 
 .meetings__content-text {
     color: var(--text-grey);
-    line-height: 1.1;
-    /* font-weight: 500; */
-    font-size: 17px;
-    margin: 20px 0;
+    /* line-height: 1.1; */
+    font-size: 15px;
+    margin: 31px 0;
 }
 
 .meetings__content h2 {
@@ -157,23 +167,147 @@ h1 {
 }
 
 .experience {
-    background-size: cover;
-    /* background-position: center center; */
-    background-repeat: no-repeat;
+    background-repeat: no-repeat !important;
     height: 300px;
-    background: linear-gradient(to right, rgba(77,150,169,0.55), rgba(85,160,169,0.85)), url(/img/image-footer-desktop.jpg);
-    background: linear-gradient(to right, rgb(77 150 169 / 75%), rgba(85,160,169,0.85)), url(/img/image-footer-desktop.jpg);
+    background: linear-gradient(to right, rgba(77, 150, 169, 0.75), rgb(85 160 169 / 98%)), url(/img/image-footer-desktop.jpg);
     display: flex;
     align-items: center;
+    background-size: cover;
 }
 
 .experience h3 {
     color: white;
     font-weight: 700;
     font-size: 37px;
+    margin-bottom: 0;
 }
 
 .experience p {
     color: white;
     font-weight: 500;
+    font-size: 16.5px;
+    margin-bottom: 0;
+}
+
+@media (max-width: 991px) {
+    .experience {
+        text-align: center;
+        height: auto;
+    }
+
+    .experience h3 {
+        margin: 25px 0;
+    }
+
+    .experience p {
+        margin: 25px 0;
+    }
+
+    .experience a {
+        margin: 16px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .logo {
+        margin-top: 37px;
+    }
+
+    .banner {
+        background-image: url(/img/image-hero.png);
+        background-position: center;
+        background-size: contain;
+        background-position-y: 28%;
+    }
+
+    .banner__titles {
+        text-align: center;
+        margin-top: 300px;
+    }
+
+    .banner__titles p {
+        font-size: 16px;
+        margin-bottom: 26px;
+        padding: 0 20px;
+    }
+
+    .banner__btn {
+        flex-direction: column;
+    }
+
+    .banner__btn .btn {
+        margin: 10px 7px;
+    }
+
+    .number-top hr {
+        margin-top: 186px;
+    }
+
+    .meetings_img {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+    }
+
+    .meetings_img img {
+        max-width: 195px;
+        margin: 15px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .meetings_img {
+        margin-top: -39px;
+    }
+
+    .meetings_img img {
+        max-width: 149px;
+        margin: 15px;
+    }
+
+    .meetings__content {
+        margin: 49px 0;
+    }
+
+    .meetings__content h2 {
+        font-size: 28px;
+    }
+
+    .meetings__content-text br {
+        display: none;
+    }
+
+    .number-top hr {
+        margin-top: 207px;  
+    }
+
+    .experience {
+        height: auto;
+        padding: 27px 0;
+        background: linear-gradient(to right, rgba(77, 150, 169, 0.75), rgb(85 160 169 / 98%)), url(/img/image-footer.jpg);
+        background-position-x: 50%;
+        background-position-y: 15%;
+        background-size: cover;
+    }
+
+    .experience h3 {
+        font-size: 30px;
+        text-align: center;
+        margin: 25px 0;
+    }
+
+    .experience p {
+        text-align: center;
+        font-size: 16px;
+        margin: 15px 0;
+    }
+
+    div .btn-download-footer {
+        margin: 20px 0;
+    }
 }
