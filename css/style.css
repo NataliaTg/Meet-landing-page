@@ -21,7 +21,7 @@ body {
 }
 
 .banner {
-    background-image: url(/img/image-hero-left.png), url(/img/image-hero-right.png);
+    background-image: url(../img/image-hero-left.png), url(../img/image-hero-right.png);
     background-size: 25%,25%;
     background-position-x: -3% , 103%;
     background-position-y: 50%, 50%;
